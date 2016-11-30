@@ -1,7 +1,7 @@
 from string import letters, punctuation
 
 
-class PangramDetector(object):
+class PanagramDetector(object):
 
     def findMissingLetters(self, sentence):
         result = ''.join(sorted(list(set(letters[:26]) ^ set(sentence.lower()))))
